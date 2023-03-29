@@ -4,12 +4,31 @@
     <title>Assistapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<!-- HTMLコード -->
+    <!-- ヘッダー -->
+    <header class="header">
+      <!-- ヘッダーロゴ -->
+      <h1>AssistApp</h1>
+      <!-- ナビゲーションメニュー -->
+      <nav class="nav">
+        <ul class="nav_menu">
+          <li class="nav_menu_item">新規登録</li>
+          <li class="nav_menu_item">ログイン</li>
+          <li class="nav_menu_item">依頼を投稿する</li>
+          <li class="nav_menu_item"></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
-  </body>
+       <footer>
+      <p>
+        Copyright AssistApp 2023.
+      </p>
+       </footer>
 </html>

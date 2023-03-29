@@ -1,0 +1,43 @@
+.header {
+  background: #fff;
+  display: flex;
+  top: 0;
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.top {
+  background-color: #3d79bd;
+  border: 1px solid #02225233;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.top h2 {
+  line-height: 200px;
+  color: #fff;
+}
+
+.nav_menu {
+  display: flex;
+  padding: 10px;
+  list-style:none
+}
+
+.nav_menu_item {
+  margin-left: 20px;
+}
+
+.content {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.content_item {
+  padding: 30px 0;
+}
