@@ -9,13 +9,19 @@
   width: 100%;
 }
 
+.footer {
+  background: #fff;
+  text-align:center;
+  padding:10px 0;
+}
 
 .top {
-  background-color: #3d79bd;
-  border: 1px solid #02225233;
-  height: 300px;
+  background-color: #f3297d;
+  border: 1px solid #ffffff;
+  height: 200px;
+  width: 80%;
   text-align: center;
-  padding-top: 100px;
+  margin:50px 20px 50px 140px;
 }
 
 .top h2 {

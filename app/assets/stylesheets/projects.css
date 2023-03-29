@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  height: 90vh;
+}
+
+/*サイドバー*/
+
+.side-bar {
+  background-color: #afeeee;
+  width: 300px;
+  margin: 100px 0px 0px 0px;
+  overflow: scroll
+}
+
+.side-menu {
+  background-color: #afeeee;
+  padding: 0 20px;
+  
+}
+
+.menu {
+  padding: 20px 0 40px;
+}
+
+.menu-name a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*メイン画面*/
+
+.project {
+  background-color: mistyrose;
+  width: calc(100vw - 300px);
+  margin: 100px 0px 0px 0px;
+  overflow: scroll
+}
