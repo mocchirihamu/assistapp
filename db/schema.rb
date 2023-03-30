@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2023_03_30_094713) do
 
   create_table "projects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "category_id", null: false
-    t.datetime "litmit", null: false
+    t.datetime "limit", null: false
     t.text "detail", null: false
     t.text "suppulement"
     t.bigint "user_id", null: false

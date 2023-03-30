@@ -23,7 +23,7 @@
 | category_id  | integer    | null: false                    |
 | limit        | date       | null: false                    |
 | detail       | text       | null: false                    |
-| suppulement  | text       | null: false                    |
+| suppulement  | text       |                                |
 | user         | references | null: false, foreign_key: true |
  
 

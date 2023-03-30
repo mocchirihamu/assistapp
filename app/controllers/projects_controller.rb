@@ -8,11 +8,16 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(prototype_params)
+    @project = Project.new(project_params)
     if @project.save
       redirect_to root_path
     else
       render :new
     end
+  end
+
+  private
+  def project_params
+    params.require(:project).permit(:category_id, :limit, :detail, :suppulement, :image).merge(user_id: current_user.id)
   end
 end
