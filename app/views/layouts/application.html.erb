@@ -18,10 +18,14 @@
       <!-- ナビゲーションメニュー -->
       <nav class="nav">
         <ul class="nav_menu">
-          <li class="nav_menu_item">新規登録</li>
-          <li class="nav_menu_item">ログイン</li>
-          <li class="nav_menu_item">依頼を投稿する</li>
-          <li class="nav_menu_item"></li>
+        <% if user_signed_in? %>
+          <li><%= link_to current_user.name, "#", class: "nav_menu_item" %></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav_menu_item" %></li>
+          <li><%= link_to '依頼を投稿する', destroy_user_session_path, method: :delete, class: "nav_menu_item" %></li>
+        <% else %>
+          <li><%= link_to 'ログイン', new_user_session_path, class: "nav_menu_item" %></li>
+          <li><%= link_to '新規登録', new_user_registration_path, class: "nav_menu_item" %></li>
+        <% end %>
         </ul>
       </nav>
     </header>
