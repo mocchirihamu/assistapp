@@ -34,5 +34,6 @@
   background-color: mistyrose;
   width: calc(100vw - 300px);
   margin: 100px 0px 0px 0px;
+  padding: 50px 0px 0px 300px;
   overflow: scroll
 }
