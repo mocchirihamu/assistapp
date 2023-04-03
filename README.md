@@ -8,7 +8,6 @@
 | encrypted_password | string | null: false               |
 | name               | string | null: false               |
 | area               | text   | null: false               |
-| group              | text   | null: false               |
 
 
 ### Association
