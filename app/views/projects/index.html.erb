@@ -25,7 +25,7 @@
             </div>
           <div class='project-top'>
             <div class='project-top__title'>
-              <%= link_to project.category.name, "#" %>
+              <%= link_to project.category.name, project_path(project.id) %>
               <div class='project-create__at'>
               <%= project.created_at.strftime("%Y-%m-%d-%H:%M") %>
               </div>

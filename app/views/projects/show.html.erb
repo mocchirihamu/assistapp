@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "side_bar" %>
+  </div>
+    <div class="project">
+      <div class="project-title">
+        ▼案件依頼詳細
+      </div>
+      <div class="project-section">
+        <div class="project-left">
+          タイトル：
+        </div>
+        <div class="project-right">
+           <%= @project.category.name %>
+        </div>
+      </div>
+      <div class="project-section">
+        <div class="project-left">
+          納期：
+        </div>
+        <div class="project-right">
+          <%= @project.limit.strftime("%Y年%m月%d日 %H時%M分") %>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-left">
+          詳細：
+        </div>
+        <div class="project-right">
+          <%= @project.detail %>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-left">
+          補足：
+        </div>
+        <div class="project-right">
+          <%= @project.suppulement %>
+        </div>
+      </div>
+
+      <div class="project-image">
+      <%= image_tag @project.image, class:"item-box-img" if @project.image.attached? %>
+      </div>
+  </div>
+</div>

@@ -30,6 +30,7 @@
 
 /*メイン画面*/
 
+/*index関連*/
 .project {
   background-color: mistyrose;
   width: calc(100vw - 300px);
@@ -121,3 +122,40 @@
 .project-bottom__content {
   font-size: 15px;
 }
+/*index関連*/
+
+/*show関連*/
+
+.project-title{
+  width: 700px;
+  padding: 20px;
+  background-color: #1C3667;
+  color: #FFFFFF;
+}
+
+.project-right{
+  width: 500px;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.project-left{
+  width: 200px;
+  background-color: #afeeee;
+  padding: 20px;
+  margin-right: 3px;
+}
+
+.project-section{
+  width: 700px;
+  display: flex;
+  margin: 3px 0px;
+}
+
+.project-image{
+  width: 700px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+/*show関連*/
