@@ -8,5 +8,5 @@ class Area < ActiveHash::Base
     { id: 6, name: '宇都宮事業所' },
   ]
   include ActiveHash::Associations
-  has_many :users
+  has_many :projects
   end

@@ -29,6 +29,11 @@ RSpec.describe Project, type: :model do
       @project.valid?
       expect(@project.errors.full_messages).to include("Limit can't be blank")
     end
+    it 'area_idが空では登録できない' do
+      @project.area_id = 1
+      @project.valid?
+      expect(@project.errors.full_messages).to include("Area can't be blank")
+    end
     it 'detailが空では登録できない' do
       @project.detail = ""
       @project.valid?

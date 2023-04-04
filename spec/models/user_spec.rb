@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
 
   describe 'ユーザー新規登録' do
     context '新規登録できる場合' do
-      it 'email、password、name、area_idが存在すれば登録できる' do
+      it 'email、password、nameが存在すれば登録できる' do
         expect(@user).to be_valid
       end
     end
@@ -26,11 +26,6 @@ RSpec.describe User, type: :model do
         @user.name = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("Name can't be blank")
-      end
-      it 'area_idが空では登録できない' do
-        @user.area_id = 1
-        @user.valid?
-        expect(@user.errors.full_messages).to include("Area can't be blank")
       end
       it '重複したemailが存在する場合は登録できない' do
         @user.save

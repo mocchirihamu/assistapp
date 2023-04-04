@@ -7,7 +7,6 @@
 | email              | string | null: false, unique: true |
 | encrypted_password | string | null: false               |
 | name               | string | null: false               |
-| area_id               | text   | null: false               |
 
 
 ### Association
@@ -21,6 +20,7 @@
 | ------------ | ---------- | ------------------------------ |
 | category_id  | integer    | null: false                    |
 | limit        | date       | null: false                    |
+| area_id      | integer    | null: false                    |
 | detail       | text       | null: false                    |
 | suppulement  | text       |                                |
 | user         | references | null: false, foreign_key: true |

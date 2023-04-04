@@ -5,9 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :area
   has_many :projects
   
   validates :name, presence: true
-  validates :area_id, numericality: { other_than: 1, message: "can't be blank" } 
 end
