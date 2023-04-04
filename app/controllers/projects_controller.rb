@@ -1,6 +1,11 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    if params[:area_id]
+      @area = Area.find(params[:area_id])
+      @projects = @area.projects.order(created_at: :desc).all
+    else
+      @projects = Project.order(created_at: :desc).all
+    end
   end
 
   def new
