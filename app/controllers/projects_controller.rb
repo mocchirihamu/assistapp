@@ -23,6 +23,8 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @comment = Comment.new
+    @comments = @project.comments.includes(:user)
   end
 
   private

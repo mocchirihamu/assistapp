@@ -97,6 +97,7 @@
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
+  
 }
 
 .form__btn:hover {
@@ -107,5 +108,40 @@
 .select-box{
   height: 30px;
   width: 250px;
+}
+/* コメント関係 */
+
+.comments_post__box {
+width: 700px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.comments_list {
+  width: 600px;
+  height: 50px;
+  background-color: #ffffff;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.container {
+  width: 700px;
+  box-sizing: border-box;
+  display:flex;
+  justify-content:center;
+  margin-top: 10px;
+}
+
+.comment__form {
+  width: 500px;
+  height: 100px;
+  resize: none;
+}
+
+.comment-actions {
+
 }
 /* フォーム周り */

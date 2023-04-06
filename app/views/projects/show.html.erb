@@ -53,5 +53,23 @@
       <div class="project-image">
       <%= image_tag @project.image, class:"item-box-img" if @project.image.attached? %>
       </div>
+      
+        <%# 投稿に紐づくコメントを一覧する処理を記述する %>
+        <div class="comments_post__box">
+            <% @comments.each do |comment| %>
+            <div class="comments_list">
+               <%= comment.user.name %>：<%= comment.reply %>
+            </div>
+            <% end %>
+        </div>
+          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
+    <div class="container">
+      <%= form_with(model: [@project, @comment], local: true) do |form| %>
+        <%= form.text_area :reply, class: :comment__form, placeholder: "コメントする", rows: "2" %>
+        <div class="comment-actions">
+        <%= form.submit "送信", class: :form__btn %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
