@@ -4,7 +4,15 @@
   </div>
     <div class="project">
       <div class="project-title">
-        ▼案件依頼詳細
+        <div class="project-title__menu">
+          ▼案件依頼詳細
+        </div>
+           <% if current_user.id == @project.user_id %>
+              <div class="project__manage">
+               <%= link_to "編集する", edit_project_path(@project.id), class: :project__btn %>
+               <%= link_to "削除する", project_path(@project.id), method: :delete, class: :project__btn %>
+             </div>
+           <% end %>
       </div>
       <div class="project-section">
         <div class="project-left">

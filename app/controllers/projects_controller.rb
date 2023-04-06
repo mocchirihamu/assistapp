@@ -27,6 +27,23 @@ class ProjectsController < ApplicationController
     @comments = @project.comments.includes(:user)
   end
 
+  def edit
+    @project = Project.find(params[:id])
+    unless @project.user_id == current_user.id
+      redirect_to root_path
+    end
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    @project.update(project_params)
+    if @project.save
+     redirect_to project_path
+    else
+     render :edit
+    end
+  end
+
   private
   def project_params
     params.require(:project).permit(:category_id, :area_id, :limit, :detail, :suppulement, :image).merge(user_id: current_user.id)
