@@ -44,6 +44,12 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to root_path
+  end
+
   private
   def project_params
     params.require(:project).permit(:category_id, :area_id, :limit, :detail, :suppulement, :image).merge(user_id: current_user.id)
