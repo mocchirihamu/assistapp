@@ -63,21 +63,24 @@
       </div>
       
         <%# 投稿に紐づくコメントを一覧する処理を記述する %>
-        <div class="comments_post__box">
+         <div class="comments_post__box">
+            <div class="comment_title">▼Comment</div>
             <% @comments.each do |comment| %>
             <div class="comments_list">
-               <%= comment.user.name %>：<%= comment.reply %>
+              <%= comment.user.name %>：<%= comment.reply %>
+               <div class="comments_timestamp"><%= comment.created_at.strftime("%Y-%m-%d-%H:%M") %></div>
             </div>
             <% end %>
-        </div>
+         
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
-    <div class="container">
-      <%= form_with(model: [@project, @comment], local: true) do |form| %>
-        <%= form.text_area :reply, class: :comment__form, placeholder: "コメントする", rows: "2" %>
-        <div class="comment-actions">
-        <%= form.submit "送信", class: :form__btn %>
-        </div>
-      <% end %>
+            <div class="container">
+              <%= form_with(model: [@project, @comment], local: true) do |form| %>
+              <%= form.text_area :reply, class: :comment__form, placeholder: "コメントする", rows: "2" %>
+                <div class="comment-actions">
+                  <%= form.submit "送信", class: :form__btn %>
+                </div>
+              <% end %>
+          </div>
     </div>
   </div>
 </div>
