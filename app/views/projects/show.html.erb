@@ -14,22 +14,6 @@
              </div>
            <% end %>
       </div>
-      <div class="project-section">
-        <div class="project-left">
-          タイトル：
-        </div>
-        <div class="project-right">
-           <%= @project.category.name %>
-        </div>
-      </div>
-      <div class="project-section">
-        <div class="project-left">
-          納期：
-        </div>
-        <div class="project-right">
-          <%= @project.limit.strftime("%Y年%m月%d日 %H時%M分") %>
-        </div>
-      </div>
 
       <div class="project-section">
         <div class="project-left">
@@ -37,6 +21,33 @@
         </div>
         <div class="project-right">
           <%= @project.area.name %>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-left">
+          投稿者：
+        </div>
+        <div class="project-right">
+          <%= @project.user.name %>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-left">
+          依頼種別：
+        </div>
+        <div class="project-right">
+           <%= @project.category.name %>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="project-left">
+          納期：
+        </div>
+        <div class="project-right">
+          <%= @project.limit.strftime("%Y年%m月%d日 %H時%M分") %>
         </div>
       </div>
 

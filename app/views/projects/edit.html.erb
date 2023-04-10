@@ -10,12 +10,19 @@
 
       <div class="project-frame">
       <%= form_with model: @project, local: true do |f|%>
+
+        <div class="field">
+          <div class="field-title">
+          <%= f.label :area, "担当エリア" %>
+          </div>
+          <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box"}) %>
+        </div>
+
         <div class="field">
           <div class="field-title">
           <%= f.label :category, "依頼種別" %>
           </div>
           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box"}) %>
-
         </div>
 
         <div class="field">
@@ -23,13 +30,6 @@
         <%= f.label :limit, "納期" %>
         </div>
         <%= f.datetime_field :limit %>
-        </div>
-
-        <div class="field">
-          <div class="field-title">
-          <%= f.label :area, "担当エリア" %>
-          </div>
-          <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box"}) %>
         </div>
 
         <div class="field">
