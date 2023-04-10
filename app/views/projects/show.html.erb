@@ -70,7 +70,11 @@
       </div>
 
       <div class="project-image">
-      <%= image_tag @project.image, class:"item-box-img" if @project.image.attached? %>
+      <% if @project.image.attached? %>
+       <%= link_to @project.image, "data-lightbox": @project.image do %>
+         <%= image_tag @project.image, class:"item-box-img", height: '150', :style=>"width:200;" %>
+       <% end %>
+      <% end %>
       </div>
       
         <%# 投稿に紐づくコメントを一覧する処理を記述する %>
@@ -79,7 +83,11 @@
             <% @comments.each do |comment| %>
             <div class="comments_list">
               <%= comment.user.name %>：<%= comment.reply %>
-              <p><%= image_tag comment.image, class:"item-box-img" if comment.image.attached? %></p>
+              <% if comment.image.attached? %>
+                <%= link_to comment.image, "data-lightbox": comment.image do %>
+                  <p><%= image_tag comment.image, class:"item-box-img", height: '150', :style=>"width:200;" %></p>
+                <% end %>
+              <% end %>
                <div class="comments_timestamp"><%= comment.created_at.strftime("%Y-%m-%d-%H:%M") %></div>
             </div>
             <% end %>
