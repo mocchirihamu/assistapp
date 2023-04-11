@@ -48,7 +48,7 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:category_id, :area_id, :limit, :detail, :suppulement, :image).merge(user_id: current_user.id)
+    params.require(:project).permit(:category_id, :area_id, :limit, :detail, :suppulement, :image, :completed).merge(user_id: current_user.id)
   end
 
   def set_project
