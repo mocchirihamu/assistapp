@@ -18,7 +18,16 @@
          <%# 質問本文の表示 %>
         <div class='project-content'>
             <div class='project-top__area'>
+              <div class="project-area__name">
             ▼ <%= project.area.name %>
+            </div>
+           <%# 完了ステータスの表示%>
+              <% if project.completed.present? %>
+                <div class="completed-status">処理済み</div>
+              <% else %>
+                <div class="incomplete-status">未処理</div>
+              <% end %>
+          <%# 完了ステータスの表示%>
               <div class='project-top__name'>
                 <%= project.user.name %>
               </div>
@@ -33,7 +42,7 @@
           </div>
           <div class='project-bottom'>
             <div class='project-bottom__content'>
-            <p>納期：<%= project.limit.strftime("%Y年%m月%d日 %H時%M分")  %>まで</p>
+            納期：<%= project.limit.strftime("%Y年%m月%d日 %H時%M分")  %>まで
             </div>
           </div>
         </div>

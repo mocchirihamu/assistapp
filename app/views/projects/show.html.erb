@@ -6,12 +6,19 @@
       <div class="project-title">
         <div class="project-title__menu">
           ▼案件依頼詳細
+          <%# 完了ステータスの表示%>
+          <% if @project.completed.present? %>
+            <div class="completed-status">処理済み</div>
+            <% else %>
+            <div class="incomplete-status">未処理</div>
+          <% end %>
+          <%# 完了ステータスの表示%>
         </div>
            <% if current_user.id == @project.user_id %>
               <div class="project__manage">
                <%= link_to "編集する", edit_project_path(@project.id), class: :project__btn %>
                <%= link_to "削除する", project_path(@project.id), method: :delete, class: :project__btn %>
-             </div>
+              </div>
            <% end %>
       </div>
 
@@ -101,7 +108,15 @@
                   <%= form.submit "送信", class: :form__btn %>
                 </div>
               <% end %>
-          </div>
-    </div>
+            </div>
+          
+            <div class="completed__form">
+          <%= form_with model: @project, local: true do |f| %>
+            <%= f.label :completed, "▼完了ステータス　＞＞" %>
+            <%= f.select :completed, [['未完了',nil],['完了',1]], {}, class: 'completed_select', id: 'task_completed' %>
+            <%= f.submit "変更", class: :completed_sumbit %>
+          <% end %>
+            </div>
+        </div>
   </div>
 </div>

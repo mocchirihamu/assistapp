@@ -74,7 +74,7 @@
 .post-content {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 110px;
   margin-bottom: 25px;
 }
 
@@ -92,7 +92,7 @@
 .comment__num {
   width: 70px;
   height: 38px;
-  margin: 20px auto 0;
+  margin: 25px auto 0;
   line-height: 38px;
   font-size: 26px;
   text-align: center;
@@ -118,14 +118,21 @@
   background-color: #c0deec;
   padding: 5px 5px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+ }
+ .project-area__name{
 
-}
+ }
+
 .project-top__name {
   font-size: 12px;
   text-align: right;
   padding-top: 5px;
+  width: 400px;
+  margin: 0 0 0 auto;
+
 }
+
 .project-top {
   display: flex;
   justify-content: space-between;
@@ -149,12 +156,13 @@
 
 
 .project-bottom {
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 0px 15px 0 15px;
 }
 
 .project-bottom__content {
   font-size: 15px;
+  padding-top: 5px;
 }
 /*index関連*/
 
@@ -181,10 +189,39 @@
   display: flex;
   border-radius: 10px;
   margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
+.completed-status{
+  font-size: 13px;
+  width: 70px;
+  color: #505050;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: solid 3px #97c2d4;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.incomplete-status{
+  font-size: 13px;
+  width: 70px;
+  color: #505050;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: solid 3px #fdff72;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+}
 .project-title__menu{
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project__btn{
   padding: 0.4em 1.6em;
@@ -228,5 +265,49 @@
   padding: 20px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.completed__form{
+  text-align: center;
+  width: 500px;
+  color: #FFFFFF;
+  background-color: #97c2d4;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  margin-top: 30px;
+  border: thick double #ffffff;
+}
+
+.completed_select{
+  display: inline-block;
+  padding: 0.2em 0.2em;
+  font-size: 0.9em;
+  color: #505050;
+  text-decoration: none;
+  user-select: none;
+  background: #FFFFFF;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.completed_sumbit{
+  display: inline-block;
+  padding: 0.4em 1em;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border-radius: 3px;
+  border: 1px #FFFFFF solid;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.completed_sumbit:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 /*show関連*/

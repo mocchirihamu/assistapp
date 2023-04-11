@@ -53,6 +53,10 @@
               <%= f.file_field :image %>
            </div>
 
+           <%# 依頼完了項目については登録時には未完了が自動的に登録される #%>
+             <%= f.hidden_field :completed,:value => 0, id: 'project_completed' %>
+           <%# 依頼完了項目については登録時には未完了が自動的に登録される #%>
+
             <div class="actions">
               <%= f.submit "保存する", class: :form__btn  %>
            </div>
