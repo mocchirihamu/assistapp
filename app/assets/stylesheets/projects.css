@@ -120,9 +120,6 @@
   display: flex;
   align-items: center;
  }
- .project-area__name{
-
- }
 
 .project-top__name {
   font-size: 12px;
@@ -131,6 +128,10 @@
   width: 400px;
   margin: 0 0 0 auto;
 
+}
+
+.project-area__name{
+  width: 110px;
 }
 
 .project-top {
@@ -196,7 +197,7 @@
 
 .completed-status{
   font-size: 13px;
-  width: 70px;
+  width: 80px;
   color: #505050;
   background-color: #ffffff;
   border-radius: 50px;
