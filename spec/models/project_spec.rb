@@ -17,8 +17,12 @@ RSpec.describe Project, type: :model do
       @project.image = nil
       expect(@project).to be_valid
     end
+    it 'completedは自動的に0が入力される' do
+      @project.completed = 0
+      expect(@project).to be_valid
+    end
   end
-  context '商品出品できない場合' do
+  context '依頼案件が投稿できない場合' do
     it 'category_idが空では登録できない' do
       @project.category_id = 1
       @project.valid?
