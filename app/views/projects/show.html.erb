@@ -79,7 +79,7 @@
       <div class="project-image">
       <% if @project.image.attached? %>
        <%= link_to @project.image, "data-lightbox": @project.image do %>
-         <%= image_tag @project.image, class:"item-box-img", height: '150', :style=>"width:200;" %>
+         <%= image_tag @project.image, class:"item-box-img", height: '100px', :style=>"width:auto;" %>
        <% end %>
       <% end %>
       </div>
@@ -92,7 +92,7 @@
               <%= comment.user.name %>：<%= comment.reply %>
               <% if comment.image.attached? %>
                 <%= link_to comment.image, "data-lightbox": comment.image do %>
-                  <p><%= image_tag comment.image, class:"item-box-img", height: '150', :style=>"width:200;" %></p>
+                  <p><%= image_tag comment.image, class:"item-box-img", height: '100', :style=>"width:auto;" %></p>
                 <% end %>
               <% end %>
                <div class="comments_timestamp"><%= comment.created_at.strftime("%Y-%m-%d-%H:%M") %></div>
@@ -110,6 +110,7 @@
               <% end %>
             </div>
           
+        <% if current_user.id == @project.user_id %>
             <div class="completed__form">
           <%= form_with model: @project, local: true do |f| %>
             <%= f.label :completed, "▼完了ステータス　＞＞" %>
@@ -117,6 +118,7 @@
             <%= f.submit "変更", class: :completed_sumbit %>
           <% end %>
             </div>
+        <% end %>
         </div>
   </div>
 </div>
