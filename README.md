@@ -37,12 +37,30 @@ https://assistapp-39052.onrender.com
 # 洗い出した要件
 <a href="https://docs.google.com/spreadsheets/d/1sDLOhJIBrC5x8M-7bC9iDSQRUqyzsSNG9yvpwNU_5-8/edit?usp=sharing">要件を定義したシート</a>
 
-# 実装した機能についてのが画像やGIFおよびその説明
-<br><br>
+# 実装した機能についての画像やGIFおよびその説明
+・ログイン画面
+[![Image from Gyazo](https://i.gyazo.com/41e612d807a2dc9aa53ca26dcaa81468.gif)](https://gyazo.com/41e612d807a2dc9aa53ca26dcaa81468)
+
+・ユーザー新規登録画面
+[![Image from Gyazo](https://i.gyazo.com/da29e55e2186c154034b154f1d340cda.gif)](https://gyazo.com/da29e55e2186c154034b154f1d340cda)
+
+・新規投稿画面
+[![Image from Gyazo](https://i.gyazo.com/3c89308fc3518185d25bdfa19f3ecbd7.gif)](https://gyazo.com/3c89308fc3518185d25bdfa19f3ecbd7)
+
+・編集画面
+[![Image from Gyazo](https://i.gyazo.com/0fdac7529ad35a0c65aea12cd5017b06.gif)](https://gyazo.com/0fdac7529ad35a0c65aea12cd5017b06)
+
+・コメント投稿
+[![Image from Gyazo](https://i.gyazo.com/13ed3ca2e156ad8a6208cf620931ea3a.gif)](https://gyazo.com/13ed3ca2e156ad8a6208cf620931ea3a)
+
+・完了ステータスを変更
+[![Image from Gyazo](https://i.gyazo.com/a890eb75fd9f10ed163b8b4ec0041bf7.gif)](https://gyazo.com/a890eb75fd9f10ed163b8b4ec0041bf7)
 
 # 実装予定の機能
 
-検索機能を実装予定。
+・検索機能
+・エラーハンドリング
+を実装予定。
 
 # データベース設計
 
@@ -50,7 +68,7 @@ https://assistapp-39052.onrender.com
 
 
 # 画面遷移図
-<br><br>
+![画面遷移図](app/assets/images/diagram.png)
 
 # 開発環境
 
@@ -69,3 +87,11 @@ https://assistapp-39052.onrender.com
 <li>% yarn install</li>
 
 # 工夫したポイント
+
+<li>一覧画面を充実させる</li>
+・事業所ごとに案件一覧を見れるようにした。<br>
+・完了ステータス、コメント数を一覧画面に表示させ。<br>
+ ⇒タスクの進行状況を一覧画面で把握しやすくした。
+
+<li>プルダウンの活用<li>
+・プルダウンや日時指定をカレンダー表示にすることで直感的に操作しやすい設計にした。
