@@ -17,8 +17,8 @@ RSpec.describe Project, type: :model do
       @project.image = nil
       expect(@project).to be_valid
     end
-    it 'completedは自動的に0が入力される' do
-      @project.completed = 0
+    it 'completedは自動的にnilが入力される' do
+      @project.completed = nil
       expect(@project).to be_valid
     end
   end

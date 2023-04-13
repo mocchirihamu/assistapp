@@ -54,7 +54,7 @@
            </div>
 
            <%# 依頼完了項目については登録時には未完了が自動的に登録される #%>
-             <%= f.hidden_field :completed,:value => 0, id: 'project_completed' %>
+             <%= f.hidden_field :completed,:value => nil, id: 'project_completed' %>
            <%# 依頼完了項目については登録時には未完了が自動的に登録される #%>
 
             <div class="actions">
