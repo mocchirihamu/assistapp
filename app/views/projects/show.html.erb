@@ -102,7 +102,7 @@
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
             <div class="container">
               <%= form_with(model: [@project, @comment], local: true) do |form| %>
-              <%= form.text_area :reply, class: :comment__form, placeholder: "コメントする(画像を1枚まで添付可/任意)", rows: "2" %>
+              <%= form.text_area :reply, class: :comment__form, placeholder: "コメントする(画像を1枚まで添付可/任意)", class: :form__text %>
                 <%= form.file_field :image, class: :comment__img %>
                 <div class="comment-actions">
                   <%= form.submit "送信", class: :form__btn %>

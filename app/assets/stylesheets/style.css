@@ -4,12 +4,17 @@
   display: flex;
   top: 0;
   height: 100px;
-  padding: 20px;
+  padding: 0 20px 0 40px;
   position: fixed;
   justify-content: space-between;
   width: 100%;
 }
 
+.header-logo{
+  height: 100px;
+  padding-top: 5px;
+
+}
 .footer {
   background-image: url(boke4.jpg);
   background-size: cover;
@@ -38,7 +43,7 @@
 
 .nav_menu {
   display: flex;
-  padding: 10px;
+  padding: 30px 10px;
   list-style:none
 }
 
@@ -54,6 +59,7 @@
   border-radius: 3px;
   transition: 0.4s ease;
   margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .content {

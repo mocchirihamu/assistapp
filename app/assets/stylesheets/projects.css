@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  height: 90vh;
+  height: 90.7vh;
 }
 
 /*サイドバー*/
@@ -14,7 +14,7 @@
 
 .side-menu {
   background-color: #d3ebf5;
-  padding: 40px 50px 0 50px;
+  padding: 20px 50px 0 50px;
   
 }
 

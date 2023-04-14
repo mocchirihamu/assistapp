@@ -3,6 +3,9 @@
     <%= render "side_bar" %>
   </div>
   <div class="project">
+       <div class="project-title">
+         ▼依頼案件一覧
+       </div>
       <% @projects.each do |project| %>
       <%# 投稿１件分の表示 %>
       <div class='post-content'>
@@ -48,9 +51,7 @@
         </div>
       </div>
 
-      <span class="name">
-        
-      </span>
+
   <% end %>
   </div>
 </div>
