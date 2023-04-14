@@ -39,22 +39,25 @@ https://assistapp-39052.onrender.com
 
 # 実装した機能についての画像やGIFおよびその説明
 ・ログイン画面
-[![Image from Gyazo](https://i.gyazo.com/41e612d807a2dc9aa53ca26dcaa81468.gif)](https://gyazo.com/41e612d807a2dc9aa53ca26dcaa81468)
+[![Image from Gyazo](https://i.gyazo.com/e0231def192497d4c452b1e224e515fa.gif)](https://gyazo.com/e0231def192497d4c452b1e224e515fa)
 
 ・ユーザー新規登録画面
-[![Image from Gyazo](https://i.gyazo.com/da29e55e2186c154034b154f1d340cda.gif)](https://gyazo.com/da29e55e2186c154034b154f1d340cda)
+[![Image from Gyazo](https://i.gyazo.com/cfcd0d2066c9d9592ba824607cc2e1e3.gif)](https://gyazo.com/cfcd0d2066c9d9592ba824607cc2e1e3)
 
 ・新規投稿画面
-[![Image from Gyazo](https://i.gyazo.com/3c89308fc3518185d25bdfa19f3ecbd7.gif)](https://gyazo.com/3c89308fc3518185d25bdfa19f3ecbd7)
+[![Image from Gyazo](https://i.gyazo.com/d3461076cef293684dbb79c48eef7950.gif)](https://gyazo.com/d3461076cef293684dbb79c48eef7950)
 
 ・編集画面
-[![Image from Gyazo](https://i.gyazo.com/0fdac7529ad35a0c65aea12cd5017b06.gif)](https://gyazo.com/0fdac7529ad35a0c65aea12cd5017b06)
+[![Image from Gyazo](https://i.gyazo.com/d7a2d5636c3dbce02881c0701dbac96c.gif)](https://gyazo.com/d7a2d5636c3dbce02881c0701dbac96c)
 
 ・コメント投稿
-[![Image from Gyazo](https://i.gyazo.com/13ed3ca2e156ad8a6208cf620931ea3a.gif)](https://gyazo.com/13ed3ca2e156ad8a6208cf620931ea3a)
+[![Image from Gyazo](https://i.gyazo.com/269db9caad40852e039cbc5dee23e203.gif)](https://gyazo.com/269db9caad40852e039cbc5dee23e203)
+
+・画像拡大機能
+[![Image from Gyazo](https://i.gyazo.com/853b8791ca7b647498f8e9b2676de238.gif)](https://gyazo.com/853b8791ca7b647498f8e9b2676de238)
 
 ・完了ステータスを変更
-[![Image from Gyazo](https://i.gyazo.com/a890eb75fd9f10ed163b8b4ec0041bf7.gif)](https://gyazo.com/a890eb75fd9f10ed163b8b4ec0041bf7)
+[![Image from Gyazo](https://i.gyazo.com/897d3b5d8d7d24e66158f59297c1b022.gif)](https://gyazo.com/897d3b5d8d7d24e66158f59297c1b022)
 
 # 実装予定の機能
 
